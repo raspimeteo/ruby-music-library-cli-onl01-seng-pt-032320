@@ -29,12 +29,8 @@ class Genre
     self.new(name)
   end
 
-  # #artists returns a collection of artists for all of the genre's songs (genre has many artists through songs)
   def artists
-    # binding.pry
-    artists = @songs.collect {|song| song.artist}
-    # binding.pry
-    artists.uniq
+    artists = @songs.collect {|song| song.artist}.uniq
   end
 
 
