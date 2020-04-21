@@ -35,9 +35,7 @@ class Artist
   end
 
   def genres
-    # binding.pry
-    genres = @songs.collect {|song| song.genre}
-    genres.uniq
+    genres = @songs.collect {|song| song.genre}.uniq
   end
 
 
